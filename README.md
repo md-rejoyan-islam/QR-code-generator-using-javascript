@@ -8,4 +8,4 @@
 * goqr API (free QR image provider)
 
 ### Live Website Link
-<a href=''>Click</a>
+<a href='https://rejoyanislam.github.io/QR-code-generator-using-goqr-api/'>Click</a>

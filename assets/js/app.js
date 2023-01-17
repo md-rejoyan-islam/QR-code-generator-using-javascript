@@ -11,6 +11,7 @@ btn.onclick = () => {
     "border",
     "rounded-md"
   );
+  // check input value is false or true
   if (!url.value) {
     return false;
   }

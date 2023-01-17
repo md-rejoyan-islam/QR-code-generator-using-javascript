@@ -8,4 +8,4 @@
 * goqr API (free QR image provider)
 
 ### Live Website Link
-<a href='' >Click</a>
+<a href=''>Click</a>

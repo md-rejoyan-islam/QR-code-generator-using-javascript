@@ -5,37 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>QR code Generator</title>
+    <title>QR Code Generator</title>
   </head>
   <body
-    class="bg-[#3397d4] grid items-center content-center justify-items-center h-screen"
+    class="bg-[#3397d4] grid items-center content-center justify-items-center min-h-screen px-2 py-10"
   >
     <!-- QR code section -->
-    <main class="max-w-[350px] px-4 mx-4 py-5 bg-white rounded-md">
-      <h1 class="font-bold text-xl">GR Code Generator</h1>
-      <p class="text-gray-600 py-1">
+    <main class="sm:w-[450px] px-4 py-5 bg-white rounded-md">
+      <h1 class="font-bold text-xl sm:text-2xl text-center pb-2">
+        QR Code Generator
+      </h1>
+      <p class="text-gray-600 py-1 text-center">
         Paste a url or enter text to create QR code
       </p>
       <div class="my-2">
         <input
           type="text"
-          class="border outline-none w-full py-3 px-4 my-3 rounded-md"
+          class="border outline-none w-full py-3 px-4 my-3 rounded-md focus:border-[#3596d2]"
           id="url"
-          placeholder="text or url "
+          placeholder="Enter URL or text"
         />
         <button
-          class="w-full py-3 px-4 bg-[#3596d2] text-white rounded-md"
+          class="w-full py-3 px-4 bg-[#3596d2] text-white rounded-md active:bg-[#2f7aa1] hover:bg-[#2f7aa1] focus:outline-none active:scale-95 transition duration-150 ease-in-out"
           id="btn"
         >
           Generator QR Code
         </button>
       </div>
       <!-- show QR code -->
-      <div class="">
-        <div id="qrcode" class=""></div>
+      <div>
+        <!-- loading image -->
+        <div id="loading" class="hidden border p-8">
+          <img
+            src="./assets/images/loading.gif"
+            class="mx-auto w-[300px] h-[300px]"
+            alt="loading"
+          />
+        </div>
+        <!-- QR code image -->
+        <div id="qrcode"></div>
       </div>
     </main>
     <script src="./assets/js/app.js"></script>
-    <script src="./qrcode.min.js"></script>
   </body>
 </html>
